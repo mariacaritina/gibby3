@@ -1,95 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Josh Jokes</title>
+</head> 
+
 <style>
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  background-color: #FFDB58;
-}
-
-.flex-container > div {
-  background-color: #FFDB58;
-  width: auto;
-  margin: 10px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 20px;
-}
-
-.vertical-menu {
-  width: 100px;
-}
-
-.vertical-menu a {
-  background-color: white;
-  color: black;
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.vertical-menu a:hover {
-  background-color: #ccc;
-}
-
-.vertical-menu a.active {
-  background-color: #ccc;
-  color: white;
-}
-p {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #593C8F; 
-}
-h1{
-  text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #593C8F; 
-    text-align: center;
-}
-h2 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #593C8F; 
-    text-align: left;
+*{
+  box-sizing:border-box; 
+  padding:0; 
+  margin:0;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color:#FFDB58;}
+  background-color:#FFDB58;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+nav{
+  background:#222; 
+  padding:5 20px;
+}
+ul{
+  list-style-type: none; 
+}
+a{
+  color: white; 
+  text-decoration: none; 
+}
+a:hover{
+  text-decoration:underline; 
+}
+.menu li{
+font-sizse:16px;
+padding:15px 5px; 
+}
+.menu li a{
+  display:block;
+}
+.logo a{
+  font-size:20px;
+}
+.button.secondary{
+  border-bottom:1px #444 solid; 
+}
+/*Mobile Menu */ 
+.menu{
+  display:flex;
+  flex-wrap:wrap; 
+  justify-content: space-between; 
+  align-items:center; 
+}
 
-img {
-  max-width: auto;
-  height: auto;
+.toggle{
+  cursor:pointer; 
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+
+.bars{
+  background:#999;
+  display: inline-block; 
+  height:2px;
+  position:relative; 
+  width:18px; 
 }
-</style>
-</head>
+.bars::before,.bars::after{
+  background:#999;
+  content:""; 
+  display: inline-block; 
+  height:2px;
+  position:absolute; 
+  width:18px;
+}
+.bars::before{
+  top:5px; 
+}
+.bars::after{
+  top:-5px; 
+}
+</style> 
+
 <body>
+<nav>
+  <ul class="menu">
+  <li class="logo"><a href="">The Josh Gibson Show</a></li>
+  <li class="item"><a href="">Home</a></li>
+  <li class="item"><a href="">About</a></li>
+  <li class="item"><a href="">Events</a></li>
+  <li class="item button"><a href="">Login</a></li>
+  <li class="item button secondary"><a href="">Sign Up</a></li>
+  <li class="toggle"><span class="bars"></span></a></li>
+</nav>
+</ul> 
+<main>
+</main>
 
-<h1>The Josh Gibson Show</h1>
-
-<div class="flex-container">
-  <div>
-    <div class="vertical-menu">
-      <a href="#" class="active">Home</a>
-      <a href="#">About</a>
-      <a href="#">Events</a>
-      <a href="#">Jokes</a>
-      <a href="#">Contact</a>
-    </div> 
-  </div>
-  <div> <img src="images/siriusxm.jpg" alt="Josh at show" class="center"> </div>
-</div>
 
 <p> This man can stand in front of any group of people and get some sort of reaction. 
   He brings out giggles from drunk suburban moms trying to get away from their families or 
@@ -97,10 +101,8 @@ img {
   clubs in town but Josh's has the wildest and most unique idea. Even middle aged landlords 
   suppress their laughter when he makes fun of people hiding their puppies from them. </p>
 
-<h2 id="demo"> What do a tick and the Eiffel Tower have in common? </h2>
 
 
-<button type="button" onclick='document.getElementById("demo").innerHTML = "They are both Paris sites!"'>Click Me For a Joke!</button>
 
 </body>
 </html>
