@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Josh Jokes</title>
+     <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+  </script>
 </head> 
 
 <style>
@@ -138,7 +153,7 @@ a:hover {
       border-color: #005959;
   }
   .button.secondary a:hover {
-      color: #ddd;
+      color: #ddd; 
   } 
 }
 
@@ -184,12 +199,13 @@ a:hover {
 </nav>
 <main>
 </main>
+<img src="images/siriusxm.jpg" alt="Josh on stage">
+
 <p> This man can stand in front of any group of people and get some sort of reaction. 
   He brings out giggles from drunk suburban moms trying to get away from their families or 
   a hearty laugh from the fat man in the corner who has taken up space at all the comedy 
   clubs in town but Josh's has the wildest and most unique idea. Even middle aged landlords 
   suppress their laughter when he makes fun of people hiding their puppies from them. </p>
-
 
 
 
